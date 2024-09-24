@@ -1,8 +1,8 @@
 # ERT-field-tests
 ERT data obtained from field tests
 The open source datasets are composed of two parts: 
-        part 1. the measurement result;
-        part 2. the inverse result.
+        part 1. the measurement result;(.dat)
+        part 2. the inverse result.(.xlsx)
 
 The profiles of the logarithm of the electrical resistivity, log(r), mentioned in the manuscript is drawn with inverse result (part 2).
 
