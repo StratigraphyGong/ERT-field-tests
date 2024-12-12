@@ -6,11 +6,9 @@ y = data(:,2);
 colors = log(data(:,3));
 
 % Reshape the data for pcolor
-[XGrid, YGrid] = meshgrid(linspace(min(x), max(x), 39), linspace(min(y), max(y), 10)); % Adjust grid size as needed
+[XGrid, YGrid] = meshgrid(linspace(min(x), max(x), 80), linspace(min(y), max(y), 15)); % Adjust grid size as needed
 CGrid = griddata(x, y, colors, XGrid, YGrid, 'cubic');
 
-% data=[XGrid(:), YGrid(:),CGrid(:)];
-% xlswrite('水平地层电阻率插值数据.xlsx', data, 'Sheet1', 'A1');
 original_color17 = [87,12,93];  
 original_color16 = [176,19,59];  
 original_color15 = [250,21,17];    
@@ -29,12 +27,9 @@ original_color3 =  [35,29,185];
 original_color2 =  [29,20,156]; 
 original_color1 =  [27,11,114]; 
 
-% 增亮因子（增加的值）
 brighten_factor = 0;
-
-% 增加每个通道的值
 brightened_colors = min([
-    original_color1; % 将原来的颜色顺序反转
+    original_color1; 
     original_color2;
     original_color3;
     original_color4;
@@ -54,13 +49,8 @@ brightened_colors = min([
 ] + brighten_factor, 255)./255;
 
 custom_cmap = interp1(linspace(0,1,17), brightened_colors, linspace(0, 1, 256));
-
-%%1. 先调整图框大小；2. 再调整图形在图框中的比例和位置；3. 然后调整坐标轴字体大小和相对位置
-
-% 创建图窗，并调整大小
 figure;
-set(gcf, 'Position', [100, 100, 700, 240]);  %调整 图窗（整个图形窗口） 在屏幕上的位置和大小的
-% 使用 pcolor 绘制
+set(gcf, 'Position', [100, 100, 700, 240]);  
 pcolor(XGrid, YGrid, CGrid);
 shading interp; 
 colormap(custom_cmap);
