@@ -33,11 +33,14 @@ they are;
 More details for generating these datasets
 ===========================================
 Step 1: Data format conversion. The data format exported from the electrical instrument (raw data) is ‘inclined structure. cye’ (DZD-8 Full Waveform DC IP Meter, manufactured by the Chongqing Geological Instrument Co. Ltd., https://www.cgif.com.cn/en/displayproduct-180-36.html), which needs to be converted into a ‘inclined structure.dat’ format file for subsequent operations. The software involves in this process is ‘HighDensityElectricMethodAnalyze’, manufactured by the Chongqing Geological Instrument Co. Ltd. And, the raw data file ‘inclined structure.xlsx’ is also provided in the open access datasets. 
+
 Step 2: Data denoising. Due to factors like environmental noise and instrument equipment, the measured electrical resistivity data from the field tests contain noise, which needs to be removed to avoid interference with the inversion process. This process contains two steps: firstly, clearly erroneous data points need to be removed, such as some negative values and data that clearly do not conform to the overall trend of the data; secondly, more detailed noise removal techniques are implemented, such as the weighted median filter. 
+
 Step 3: Inversion and parameter setting. The inversion problem always involves an optimization process. Starting from a simple initial model (usually a homogeneous half-space), an optimization method is used to iteratively change the resistivity of the model cells to minimize the difference between the measured and calculated apparent resistivity values (Loke et al., 2013). The objective function U can be expressed as follows: 
      U = ||d-F(m)||^2 +λ ||C·m||^2
 where m represents the final result of electrical resistivity distribution; ||d- F(m)||^2 is the data-fit constrain, which means that the forward response F(m) should be sufficiently close to the measured data d. ||C·m||^2 is the model constrain, where C is called the smoothness matrix. More details for solving this equation can refer to Li et al. (2024). 
 As for the parameter setting, the inversion process is usually stopped when the relative change in the term rms error is less than 5% (Loke and Barker, 1996), so the convergence limit is set at 5%. Based on the data measured by the Miller soil box (Table 1), 15% of model constrain in the inclined stratigraphic structure is applied to correct the measurement errors caused by the factor such as soil compactness, moisture content and environmental noise. And depth correction is also utilized based on the stratigraphies revealed by the boreholes. 
+
 Step 4: Visualization of ERT profiles. The final results of electrical resistivity data are processed with the software Matlab and the related code is also added to the open-access data, and then the ERT profiles are exhibited in Figure 7. 
 
 Table 1. Measured electrical resistivities of the tested stratigraphic layers
