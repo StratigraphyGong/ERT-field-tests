@@ -41,11 +41,11 @@ As for the parameter setting, the inversion process is usually stopped when the 
 Step 4: Visualization of ERT profiles. The final results of electrical resistivity data are processed with the software Matlab and the related code is also added to the open-access data, and then the ERT profiles are exhibited in Figure 7. 
 
 Table 1. Measured electrical resistivities of the tested stratigraphic layers
------------------------------------------------------------------------------
-                            Natural soil Sandy soil	Gravel soil	   Gravel
------------------------------------------------------------------------------
-Electrical resistivity (Ω·m)	115~162	    273~439	   759~1342	    3646~4217
------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+                                     Natural soil     Sandy soil	  Gravel soil	      Gravel
+------------------------------------------------------------------------------------------------------------
+     Electrical resistivity (Ω·m)	115~162	     273~439	   759~1342	    3646~4217
+------------------------------------------------------------------------------------------------------------
 Loke, M. H., Chambers, J. E., Rucker, D. F., Kuras, O., & Wilkinson, P. B. (2013). Recent developments in the direct-current geoelectrical imaging method. Journal of applied geophysics, 95, 135-156.
 Li, F., Li, K., Su, A., & Tang, H. (2024). Detection of landslide groundwater based on magnetic resonance sounding given complex topography. Engineering Geology, 331, 107453.
 Loke, M. H., & Barker, R. D. (1996). Rapid least‐squares inversion of apparent resistivity pseudosections by a quasi‐Newton method1. Geophysical prospecting, 44(1), 131-152.
