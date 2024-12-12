@@ -32,6 +32,7 @@ they are;
 ===========================================
 More details for generating these datasets
 ===========================================
+
 Step 1: Data format conversion. The data format exported from the electrical instrument (raw data) is ‘inclined structure. cye’ (DZD-8 Full Waveform DC IP Meter, manufactured by the Chongqing Geological Instrument Co. Ltd., https://www.cgif.com.cn/en/displayproduct-180-36.html), which needs to be converted into a ‘inclined structure.dat’ format file for subsequent operations. The software involves in this process is ‘HighDensityElectricMethodAnalyze’, manufactured by the Chongqing Geological Instrument Co. Ltd. And, the raw data file ‘inclined structure.xlsx’ is also provided in the open access datasets. 
 
 Step 2: Data denoising. Due to factors like environmental noise and instrument equipment, the measured electrical resistivity data from the field tests contain noise, which needs to be removed to avoid interference with the inversion process. This process contains two steps: firstly, clearly erroneous data points need to be removed, such as some negative values and data that clearly do not conform to the overall trend of the data; secondly, more detailed noise removal techniques are implemented, such as the weighted median filter. 
