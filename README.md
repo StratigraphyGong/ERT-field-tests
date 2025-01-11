@@ -48,7 +48,10 @@ Table 1. Measured electrical resistivities of the tested stratigraphic layers
      Electrical resistivity (Ω·m)	115~162	     273~439	   759~1342	    3646~4217
 ------------------------------------------------------------------------------------------------------------
 Loke, M.H., Chambers, J.E., Rucker, D.F., Kuras, O., Wilkinson, P.B. (2013). Recent developments in the direct-current geoelectrical imaging method. Journal of applied geophysics, 95, 135-156.
+
 Li, F., Li, K., Su, A. Tang, H. (2024). Detection of landslide groundwater based on magnetic resonance sounding given complex topography. Engineering Geology, 331, 107453.
+
 Loke, M.H., Barker, R.D. (1996). Rapid least‐squares inversion of apparent resistivity pseudosections by a quasi‐Newton method1. Geophysical prospecting, 44(1), 131-152.
+
 Zohdy, A.A. 1989. A new method for the automatic interpretation of Schlumberger and Wenner sounding curves. Geophysics, 54 (2), 245- 253.
 
